@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../server/graphql/queries/task/index.js"],"names":["task","tasks"],"mappings":";;;;;;AAAA;;;;AACA;;;;;;kBAEe;AACbA,wBADa;AAEbC;AAFa,C","file":"index.js","sourcesContent":["import task from './single';\r\nimport tasks from './multiple';\r\n\r\nexport default {\r\n  task,\r\n  tasks\r\n};"]}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|PT+Sans');
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "~normalize.css";
+
+// Variables
+$primary_color_m: #ff5a5f;
+$primary_color_l: #ff7e82;
+$link_color: #008489;
+$link_hover: #484848;
+$border_l: #dce0e0;
+$text_color: #767676;
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-family: 'PT Sans', sans-serif;
+  background-color: #f1f1f1;
+  color: $text_color;
+}
+
+p, span{
+	font-family: 'PT Sans', sans-serif;
+  color: $text_color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+  color: $link_hover;
+  span{
+    color: $primary_color_m;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $link_color;
+}
+
+a:hover, a:focus {
+  color: $link_hover;
+}
+
+// Header
+.header_bg{
+  background: #fff;
+  border-bottom: 1px solid $border_l;
+  padding: 8px;
+  color: #424242;
+  .navright, .navleft{
+    width: 100%;
+    .logo{
+      max-width: 150px;
+      padding: 8px;
+      font-size: 20px;
+      border-right: 1px solid $border_l;
+    }
+    li{
+      padding: 4px;
+      margin: 0 4px;
+      display: inline;
+      list-style-type: none;
+    }
+  }
+}
+
+// Slider
+.slider_bg{
+  background: url('../assets/images/slider.jpeg') no-repeat #191919;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  .slider_text{
+    height: 500px;
+    h1{
+      color: #ffffff;
+    }
+  }
+}
+
+// Footer 
+.footer_bg{
+  background-color: #e3e3e3;
+  border-top: 4px solid $border_l;
+  padding: 24px 0;
+  .footer_text{
+    color: #191919;
+  }
+}

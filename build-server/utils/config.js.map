@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../server/utils/config.js"],"names":["secret","mdb","mdbLocal"],"mappings":";;;;;kBAAe;AACdA,SAAQ,wBADM;AAEdC,MAAK,oDAFS;AAGdC,WAAU;AAHI,C","file":"config.js","sourcesContent":["export default {\r\n\tsecret: 'ThisIsFuckingAPpSecret',\r\n\tmdb: 'mongodb://madhav:madhav77@dbh36.mlab.com:27367/gql',\r\n\tmdbLocal: 'mongodb://localhost/ntask'\r\n}\r\n"]}

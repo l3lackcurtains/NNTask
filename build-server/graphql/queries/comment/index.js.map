@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../server/graphql/queries/comment/index.js"],"names":["comment","comments"],"mappings":";;;;;;AAAA;;;;AACA;;;;;;kBAEe;AACbA,2BADa;AAEbC;AAFa,C","file":"index.js","sourcesContent":["import comment from './single';\r\nimport comments from './multiple';\r\n\r\nexport default {\r\n  comment,\r\n  comments\r\n};"]}

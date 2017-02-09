@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../server/graphql/queries/usermeta/index.js"],"names":["usermeta"],"mappings":";;;;;;AAAA;;;;;;kBAEe;AACbA;AADa,C","file":"index.js","sourcesContent":["import usermeta from './single';\r\n\r\nexport default {\r\n  usermeta\r\n};"]}
