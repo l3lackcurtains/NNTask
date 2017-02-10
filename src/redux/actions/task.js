@@ -16,8 +16,8 @@ const recErr = json => {
 	data: json
 })
 
-// Fetch Tasks / Error
-const fetchTasks = () => (dispatch) => {
+// Fetch Query
+const fetchQuery = () => (dispatch) => {
 	dispatch(reqTask())
 	const url = '/'
 	const res = axios({
@@ -35,8 +35,8 @@ const fetchTasks = () => (dispatch) => {
 	return res
 }
 
-// Fetch Task by id / Error
-const fetchTask = id =>	(dispatch) => {
+// Fetch Mutation
+const fetchMutation = data =>	(dispatch) => {
 	dispatch(reqTask())
 	const url = '/'
 	const res = axios({

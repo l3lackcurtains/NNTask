@@ -2256,6 +2256,10 @@ dom-converter@~0.1:
   dependencies:
     utila "~0.3"
 
+dom-helpers@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.2.1.tgz#3203e07fed217bd1f424b019735582fc37b2825a"
+
 dom-serializer@0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/dom-serializer/-/dom-serializer-0.1.0.tgz#073c697546ce0780ce23be4a28e293e40bc30c82"
@@ -4231,7 +4235,7 @@ kareem@1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/kareem/-/kareem-1.2.0.tgz#59851e833feb1ce6cf60000e0c23acf75c8a3547"
 
-keycode@^2.1.1:
+keycode@^2.1.1, keycode@^2.1.7:
   version "2.1.8"
   resolved "https://registry.yarnpkg.com/keycode/-/keycode-2.1.8.tgz#94d2b7098215eff0e8f9a8931d5a59076c4532fb"
 
@@ -6013,7 +6017,7 @@ react-addons-css-transition-group@^15.4.2:
     fbjs "^0.8.4"
     object-assign "^4.1.0"
 
-react-addons-shallow-compare@^15.4.2:
+react-addons-shallow-compare@^15.4.1, react-addons-shallow-compare@^15.4.2:
   version "15.4.2"
   resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.4.2.tgz#027ffd9720e3a1e0b328dcd8fc62e214a0d174a5"
   dependencies:
@@ -6148,6 +6152,33 @@ react-scripts@0.8.4:
     whatwg-fetch "1.0.0"
   optionalDependencies:
     fsevents "1.0.14"
+
+react-swipeable-views-core@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-core/-/react-swipeable-views-core-0.10.1.tgz#aadb91640193679f931274eba483775f6d136e2d"
+  dependencies:
+    babel-runtime "^6.11.6"
+    warning "^3.0.0"
+
+react-swipeable-views-utils@^0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.10.1.tgz#2824e31a32701ac4a97335600a43f96b75afee9f"
+  dependencies:
+    babel-runtime "^6.11.6"
+    keycode "^2.1.7"
+    react-addons-shallow-compare "^15.4.1"
+    react-event-listener "^0.4.0"
+    react-swipeable-views-core "^0.10.1"
+
+react-swipeable-views@^0.10.6:
+  version "0.10.6"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.10.6.tgz#f7bfb7b9c96423c8fd8437e1fdf3667b542fef58"
+  dependencies:
+    babel-runtime "^6.11.6"
+    dom-helpers "^3.2.1"
+    react-swipeable-views-core "^0.10.1"
+    react-swipeable-views-utils "^0.10.1"
+    warning "^3.0.0"
 
 react-tap-event-plugin@^2.0.1:
   version "2.0.1"
