@@ -10,7 +10,7 @@ class TaskBox extends Component{
 				<Row start="xs" middle="xs">
 					<Col xs={2}>
 						<div className={styles.taskbox_avatar}>
-							<img src="https://cdn0.iconfinder.com/data/icons/avatars-6/500/Avatar_boy_man_people_account_client_male_person_user_work_sport_beard_team_glasses-512.png" />
+							<img src="http://kingdom-doctors.com/images/img/avatar.png" />
 						</div>
 					</Col>
 					<Col xs={8}>
@@ -21,7 +21,7 @@ class TaskBox extends Component{
 						<h2 className={styles.taskbox_price}>$199</h2>
 						<RaisedButton
 							label="Earn"
-							backgroundColor="#ff5a5f"
+							backgroundColor="#51af33"
 							labelColor="#fff"
 							fullWidth={true}
 						/>

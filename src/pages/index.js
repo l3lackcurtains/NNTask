@@ -7,7 +7,6 @@ class main extends Component {
 		return (
 		<div className="App">
 		{ this.props.children }
-		<Footer />
 		</div>
 		)
 	}

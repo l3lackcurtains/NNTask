@@ -10,6 +10,7 @@ import main from './pages'
 import login from './pages/login'
 import home from './pages/home'
 import tasks from './pages/tasks'
+import posttask from './pages/post-task'
 
 const history = syncHistoryWithStore(browserHistory, store)
 
@@ -25,6 +26,7 @@ render(
 				<IndexRoute component={home}></IndexRoute>
 				<Route path="/login" component={login}></Route>
 				<Route path="/tasks" component={tasks}></Route>
+				<Route path="/post-task" component={posttask}></Route>
 			</Route>
 		</Router>
 	</Provider>

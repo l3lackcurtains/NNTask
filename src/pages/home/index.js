@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router'
 import Header from '../../components/header'
+import Footer from '../../components/footer'
 import Slider from '../../components/slider'
 
 class home extends Component {
@@ -9,6 +9,7 @@ class home extends Component {
     <div>
       <Header />
       <Slider />
+      <Footer />
     </div>
     )
   }

@@ -6,7 +6,7 @@ import MyTasks from './mytasks'
 import styles from '../../stylesheets/index.scss'
 
 const mainStyle = {
-	height: window.innerHeight
+	height: window.innerHeight-70
 }
 
 class TasksMain extends Component{

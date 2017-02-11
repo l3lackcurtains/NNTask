@@ -3,8 +3,8 @@
 @import "~normalize.css";
 
 // Variables
-$primary_color_m: #ff5a5f;
-$primary_color_l: #ff7e82;
+$primary_color_m: #51af33;
+$primary_color_l: #51af33;
 $link_color: #008489;
 $link_hover: #484848;
 $border_l: #dce0e0;
@@ -50,6 +50,10 @@ body {
   color: $text_color;
 }
 
+ul, li {
+  margin: 0;
+  padding: 0;
+}
 p, span{
 	font-family: 'PT Sans', sans-serif;
   color: $text_color;
@@ -78,8 +82,12 @@ a:hover, a:focus {
 .header_bg{
   background: #fff;
   border-bottom: 1px solid $border_l;
-  padding: 8px;
+  padding: 23px 0;
   color: #424242;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 9999;
   .navright, .navleft{
     width: 100%;
@@ -100,6 +108,9 @@ a:hover, a:focus {
       }
     }
   }
+}
+.header_below{
+  height: 70px;
 }
 
 // Slider
@@ -135,9 +146,16 @@ a:hover, a:focus {
     background-color: #191919;
   }
   .tmain{
+    background: #ffffff;
     margin-right: -16px;
     overflow-y: scroll;
   }
+}
+
+
+// post-task page
+.post_task{
+  
 }
 
 /*
@@ -158,6 +176,7 @@ TaskBox
     width: 100%;
     border-radius: 50%;
     border: 2px solid #fff;
+    overflow: hidden;
     img{
       width: 100%;
     }
@@ -187,28 +206,63 @@ Single Task
 
 .stask{
   padding: 0 8px;
+  overflow-y: scroll;
+  background: #ffffff;
   .stask_title{
 
   }
   .stask_meta{
-    li{
-      list-style-type: none;
-      display: inline-block;
-    }
+    position: relative;
+    overflow: hidden;
     .stask_avatar{
-      width: 80px;
-      height: 80px;
-      overflow: hidden;
-      img{
-        width: 100%;
-      }
+      position: absolute;
+      top: 0;
+      left: 0;
     }
     .stask_posted{
-
+      margin-left: 88px;
+      padding: 12px 0;
+    }
+    .stasks_chips{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 8px 0;
     }
   }
   .stask_price{
 
+  }
+  .stask_map{
+    height: 220px;
+    width: 100%;
+    background: #191919;
+  }
+}
+
+/*
+==========================================
+Comments
+==========================================
+*/
+.comments{
+  .comments_box{
+    .comment_box{
+      display: flex;
+    }
+    .comment_avatar{
+      margin-right: 8px;
+    }
+    .comment_content{
+      background-color: #f7f7f7;
+      margin: 4px;
+      padding: 4px;
+      border: 1px solid $border_l;
+      .comment_author{
+        border-bottom: 1px solid $border_l;
+        padding: 4px 0;
+        color: #191919;
+      }
+    }
   }
 }
 
@@ -223,46 +277,5 @@ Login / Signup
       list-style-type: none;
       padding: 8px 0;
     }
-  }
-}
-
-/*
-==========================================
-Dialog
-==========================================
-*/
-
-.dialog{
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0,0,0,.17);
-  @include card(1);
-  .dialog_title{
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 18px;
-    padding-left: 48px;
-  }
-  .dialog_close{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 18px;
-  }
-  .dialog_content{
-    position: relative;
-    padding: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
   }
 }

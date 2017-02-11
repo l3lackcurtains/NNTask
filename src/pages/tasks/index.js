@@ -14,10 +14,10 @@ class tasks extends Component {
 				<div className={styles.tasks_bg}>
 					<Grid>
 						<Row start="xs">
-							<Col xs={5}>
+							<Col md={5} xs={12}>
 								<TasksMain />
 							</Col>
-							<Col xs={7}>
+							<Col md={7} xs={12}>
 								<SingleTask />
 							</Col>
 						</Row>

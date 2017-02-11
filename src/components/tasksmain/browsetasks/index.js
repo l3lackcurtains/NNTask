@@ -6,7 +6,6 @@ class BrowseTasks extends Component{
 	render(){
 		return(
 				<div className={styles.tasksbox}>
-					Browse tasks
 					<TaskBox />
 					<TaskBox />
 					<TaskBox />
