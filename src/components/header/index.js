@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid/lib'
 import { Link } from 'react-router'
 import styles from '../../stylesheets/index.scss'
+import Login from '../login'
+import DialogBox from '../dialogbox'
 
 class Header extends Component {
 	render() {
@@ -27,6 +29,9 @@ class Header extends Component {
 					</Col>
 				</Row>
 			</Grid>
+			<DialogBox
+				content={<Login />}
+			/>
 		</div>
 		)
 	}
