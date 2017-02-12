@@ -8,8 +8,20 @@ import {
 } from 'material-ui/Stepper'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
+import TextField from 'material-ui/TextField'
+import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
+import DatePicker from 'material-ui/DatePicker'
 import Header from '../../components/header'
 import styles from '../../stylesheets/index.scss'
+
+const inlineStyles = {
+  radioButtonGroup: {
+    margin: 4
+  },
+  radioButton: {
+    display: 'inline-block'
+  }
+}
 
 class posttask extends Component {
 	constructor(props){
@@ -63,65 +75,96 @@ class posttask extends Component {
 
 	render() {
 		const {finished, stepIndex} = this.state
-    const contentStyle = {margin: '0 16px'}
+    const contentStyle = {margin: '0 16px', color: '#191919'}
 
 		return (
 		<div>
 			<Header />
-				<div className={styles.post_task}>
-					<Grid>
-						<Row start="xs">
-							<Col md={8} mdOffset={2} xs={12}>
-								<div>
-									<Stepper activeStep={stepIndex} orientation="vertical">
-										<Step>
-											<StepLabel>Tasks detail</StepLabel>
-											<StepContent>
-												<p>
-													For each ad campaign that you create, you can control how much youre willing to spend on clicks and conversions, which networks
-													and geographical locations you want your ads to show on, and more.
-												</p>
-												{this.renderStepActions(0)}
-											</StepContent>
-										</Step>
-										<Step>
-											<StepLabel>Location</StepLabel>
-											<StepContent>
-												<p>An ad group contains one or more ads which target a shared set of keywords.</p>
-												{this.renderStepActions(1)}
-											</StepContent>
-										</Step>
-										<Step>
-											<StepLabel>Budget estimation</StepLabel>
-											<StepContent>
-												<p>
-													Try out different ad text to see what brings in the most customers,
-													and learn how to enhance your ads using features like ad extensions.
-													If you run into any problems with your ads, find out how to tell if
-													theyre running and how to resolve approval issues.
-												</p>
-												{this.renderStepActions(2)}
-											</StepContent>
-										</Step>
-									</Stepper>
-									{finished && (
-										<p style={{margin: '20px 0', textAlign: 'center'}}>
-											<a
-												href="#"
-												onClick={(event) => {
-													event.preventDefault()
-													this.setState({stepIndex: 0, finished: false})
-												}}
-											>
-												Click here
-											</a> to reset the example.
-										</p>
-									)}
-								</div>
-							</Col>
-						</Row>
-					</Grid>
-				</div>
+			<div className={styles.post_task}>
+				<Grid>
+					<Row start="xs">
+						<Col md={8} mdOffset={2} xs={12}>
+								<Stepper className={styles.stepper} activeStep={stepIndex} orientation="vertical">
+									<Step>
+										<StepLabel>Tasks detail</StepLabel>
+										<StepContent>
+                      <div className={styles.stepper_label}>Task Title</div>
+                      <TextField
+                        hintText="Eg: Delivery of some inventory"
+                        fullWidth={true}
+                      />
+                      <div className={styles.stepper_label}>Description of your task</div>
+                      <TextField
+                        hintText="Describe your task in more than 40 words"
+                        multiLine={true}
+                        rows={5}
+                        fullWidth={true}
+                      />
+											{this.renderStepActions(0)}
+										</StepContent>
+									</Step>
+									<Step>
+										<StepLabel>Location</StepLabel>
+										<StepContent>
+                      <RadioButtonGroup name="shipSpeed" defaultSelected="in_person" style={inlineStyles.radioButtonGroup}>
+                        <RadioButton
+                          value="in_person"
+                          label="To be done in person"
+                          style={inlineStyles.radioButton}
+                        />
+                        <RadioButton
+                          value="online"
+                          label="To be done online"
+                          style={inlineStyles.radioButton}
+                        />
+                      </RadioButtonGroup>
+                      <div className={styles.stepper_label}>Task Location</div>
+                      <TextField
+                        hintText="Eg: Pokhara, Nepal 5"
+                        fullWidth={true}
+                      />
+                      <div className={styles.stepper_label}>Due Date</div>
+                      <DatePicker
+                        hintText="Portrait Dialog"
+                        fullWidth={true}
+                      />
+											{this.renderStepActions(1)}
+										</StepContent>
+									</Step>
+									<Step>
+										<StepLabel>Budget estimation</StepLabel>
+										<StepContent>
+                      <div className={styles.stepper_label}>How many people do you need for your task?</div>
+                      <TextField
+                        hintText="Estimated Number of workers"
+                        fullWidth={true}
+                      />
+                      <div className={styles.stepper_label}>What is your budget?</div>
+                      <TextField
+                        hintText="$25"
+                        fullWidth={true}
+                      />
+											{this.renderStepActions(2)}
+										</StepContent>
+									</Step>
+								</Stepper>
+								{finished && (
+									<p style={{margin: '20px 0', textAlign: 'center'}}>
+										<a
+											href="#"
+											onClick={(event) => {
+												event.preventDefault()
+												this.setState({stepIndex: 0, finished: false})
+											}}
+										>
+											Click here
+										</a> to reset the example.
+									</p>
+								)}
+						</Col>
+					</Row>
+				</Grid>
+			</div>
 		</div>
 		)
 	}

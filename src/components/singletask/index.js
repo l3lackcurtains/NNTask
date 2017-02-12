@@ -7,6 +7,7 @@ import { blue300, indigo900 } from 'material-ui/styles/colors'
 import SvgIconFace from 'material-ui/svg-icons/action/face'
 import styles from '../../stylesheets/index.scss'
 import Comments from '../comments'
+import TaskMap from '../taskmap'
 
 const style = {
 	chip: {
@@ -61,6 +62,7 @@ class SingleTask extends Component{
 					</Col>
 					<Col xs={12}>
 						<div className={styles.stask_map}>
+							<TaskMap />
 						</div>
 					</Col>
 					<Col xs={12}>
