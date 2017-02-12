@@ -12,7 +12,7 @@ import TextField from 'material-ui/TextField'
 import { RadioButton, RadioButtonGroup } from 'material-ui/RadioButton'
 import DatePicker from 'material-ui/DatePicker'
 import Header from '../../components/header'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 const inlineStyles = {
   radioButtonGroup: {

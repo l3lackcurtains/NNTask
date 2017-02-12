@@ -1,0 +1,17 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+// Slider
+.slider_bg{
+  background: url('../../assets/images/slider.jpeg') no-repeat #191919;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  .slider_text{
+    height: 500px;
+    h1{
+      color: #ffffff;
+    }
+  }
+}

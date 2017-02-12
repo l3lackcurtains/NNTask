@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Avatar from 'material-ui/Avatar'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class Comment extends Component{
   render(){

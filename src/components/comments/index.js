@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Comment from './comment'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class Comments extends Component{
   render(){

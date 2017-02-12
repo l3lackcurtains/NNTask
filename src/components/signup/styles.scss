@@ -1,0 +1,11 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+.signup{
+  ul{
+    li{
+      list-style-type: none;
+      padding: 8px 0;
+    }
+  }
+}

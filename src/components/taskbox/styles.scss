@@ -1,0 +1,33 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+.taskbox{
+  overflow: hidden;
+  border-bottom: 1px solid $border_l;
+  padding: 4px;
+  .taskbox_avatar{
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    img{
+      width: 100%;
+    }
+  }
+  .taskbox_title{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+  }
+  .taskbox_location{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
+  }
+  .taskbox_price{
+    text-align: center;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 const mapStyle = {
 	height: window.innerHeight

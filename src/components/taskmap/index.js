@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { GoogleMapLoader, withGoogleMap, GoogleMap, Marker } from 'react-google-maps'
+import styles from './styles.scss'
 
 const GettingStartedGoogleMap = withGoogleMap(props => (
   <GoogleMap

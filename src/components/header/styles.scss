@@ -1,0 +1,49 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+// Header
+.header_bg{
+  background: #fff;
+  border-bottom: 1px solid $border_l;
+  color: #424242;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar{
+  width: 100%;
+  @include bp(sm) {
+    display: none;
+  }
+  .logo{
+    font-size: 20px;
+    padding: 23px 0;
+    border-right: 1px solid $border_l;
+  }
+  .navright, .navleft{
+    width: 100%;
+    padding: 23px 0;
+    li{
+      padding: 4px;
+      margin: 0 4px;
+      display: inline;
+      list-style-type: none;
+    }
+  }
+  .navright{
+    text-align: right;
+  }
+}
+.navbar_mobile{
+  display: none;
+  padding: 25px 0;
+  @include bp(sm) {
+    display: block;
+  }
+}
+.header_below{
+  height: 70px;
+}

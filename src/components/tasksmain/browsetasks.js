@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import styles from '../../../stylesheets/index.scss'
-import TaskBox from '../../taskbox'
+import styles from './styles.scss'
+import TaskBox from '../taskbox'
 
 class BrowseTasks extends Component{
 	render(){

@@ -1,0 +1,12 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+// post-task page
+.post_task{
+  .stepper{
+    .stepper_label{
+      color: $primary_color_m;
+      padding: 8px 0;
+    }
+  }
+}

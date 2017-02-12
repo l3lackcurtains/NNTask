@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import FlatButton from 'material-ui/FlatButton'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class Signup extends Component{
   render() {

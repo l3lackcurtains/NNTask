@@ -1,0 +1,12 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+// Footer
+.footer_bg{
+  background-color: #e3e3e3;
+  border-top: 4px solid $border_l;
+  padding: 24px 0;
+  .footer_text{
+    color: #191919;
+  }
+}

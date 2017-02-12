@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid/lib'
 import RaisedButton from 'material-ui/RaisedButton'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class TaskBox extends Component{
 	render(){

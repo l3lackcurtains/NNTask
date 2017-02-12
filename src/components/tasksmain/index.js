@@ -3,7 +3,7 @@ import { Tabs, Tab } from 'material-ui/tabs'
 import SwipeableViews from 'react-swipeable-views'
 import BrowseTasks from './browsetasks'
 import MyTasks from './mytasks'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 const mainStyle = {
 	height: window.innerHeight-70

@@ -1,0 +1,11 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+.tasksbox{
+  overflow-x: hidden;
+}
+.tmain{
+  background: #ffffff;
+  margin-right: -16px;
+  overflow-y: scroll;
+}

@@ -5,7 +5,7 @@ import Avatar from 'material-ui/Avatar'
 import Chip from 'material-ui/Chip'
 import { blue300, indigo900 } from 'material-ui/styles/colors'
 import SvgIconFace from 'material-ui/svg-icons/action/face'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 import Comments from '../comments'
 import TaskMap from '../taskmap'
 

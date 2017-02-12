@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { browserHistory } from 'react-router'
 import { Grid, Row, Col } from 'react-flexbox-grid/lib'
 import RaisedButton from 'material-ui/RaisedButton'
-import styles from '../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class Slider extends Component {
-	
+
 	navigateToTasks = () => browserHistory.push({ pathname: '/tasks' })
 
 	render() {

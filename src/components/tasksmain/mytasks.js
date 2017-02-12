@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styles from '../../../stylesheets/index.scss'
+import styles from './styles.scss'
 
 class MyTasks extends Component{
 	render(){
@@ -12,4 +12,3 @@ class MyTasks extends Component{
 }
 
 export default MyTasks
-

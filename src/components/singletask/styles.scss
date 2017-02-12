@@ -1,0 +1,37 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+.stask{
+  padding: 0 8px;
+  overflow-y: scroll;
+  background: #ffffff;
+  .stask_title{
+
+  }
+  .stask_meta{
+    position: relative;
+    overflow: hidden;
+    .stask_avatar{
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .stask_posted{
+      margin-left: 88px;
+      padding: 12px 0;
+    }
+    .stasks_chips{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 8px 0;
+    }
+  }
+  .stask_price{
+
+  }
+  .stask_map{
+    height: 220px;
+    width: 100%;
+    background: #191919;
+  }
+}

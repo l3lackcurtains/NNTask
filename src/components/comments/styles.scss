@@ -1,0 +1,25 @@
+@import "~bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "../../stylesheets/pre.scss";
+
+.comments{
+  .comments_box{
+
+  }
+}
+.comment_box{
+  display: flex;
+}
+.comment_avatar{
+  margin-right: 8px;
+}
+.comment_content{
+  background-color: #f7f7f7;
+  margin: 4px;
+  padding: 4px;
+  border: 1px solid $border_l;
+  .comment_author{
+    border-bottom: 1px solid $border_l;
+    padding: 4px 0;
+    color: #191919;
+  }
+}
