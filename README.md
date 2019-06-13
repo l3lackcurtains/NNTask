@@ -1,6 +1,7 @@
 # NNTask APP
 
-##starting the project
+## starting the project
+
 ```
   npm start
 ```
